@@ -1,1 +1,1 @@
-https://github.com/tranjackson/jackson-tran-tp1-int-web-2
+https://github.com/tranjackson/tran-jackson-tp1-int-web-2
