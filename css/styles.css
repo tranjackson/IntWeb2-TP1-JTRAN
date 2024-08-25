@@ -25,7 +25,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
 }
 
 .flex-around {
@@ -48,6 +47,12 @@ body {
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .flex-col-break-960px {
@@ -195,7 +200,13 @@ nav a:hover, .btn:hover {
 
 #call-to-action h3 {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#call-to-action p {
+    font-size: 1.2em;
+    padding-bottom: 20px;
     color: #555;
 }
 
@@ -203,6 +214,7 @@ nav a:hover, .btn:hover {
     display: inline-block;
     max-width: 600px;
     width: 100%;
+    padding-top: 10px;
 }
 
 #call-to-action input[type="email"] {
@@ -260,6 +272,7 @@ nav a:hover, .btn:hover {
 .chart-info {
     flex: 1;
     min-width: 300px;
+    gap: 100px;
 }
 
 .chart-info h2 {
@@ -275,7 +288,7 @@ nav a:hover, .btn:hover {
 
 .large-text {
     display: flex;
-   align-items: center;
+    align-items: center;
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 0;
@@ -343,7 +356,22 @@ footer {
 }
 
 .footer-address {
-    margin: 20px 0;
+    margin: 20px 10px 0;
 }
 
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.flex-end img {
+    padding-right: 5px;
+}
+
+.flex-end p {
+    padding-right: 10px;
+}
 
