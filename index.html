@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Équilibre Terrestre</title>
+		<meta
+			name="description"
+			content="Page Accueil de chez Équilibre Terrestre de voyages et guérison spirituelle"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="icon" type="img/png" href="img/png/favicon.png" />
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Équilibre Terrestre</title>
-    <meta name="description" content="Page Accueil de chez Équilibre Terrestre de voyages et guérison spirituelle">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="img/png" href="img/png/favicon.png">
-</head>
+	<body>
+		<header>
+			<div class="container flex-between align-center">
+				<h1 class="logo">
+					<img src="img/png/logo.png" alt="Logo" />
+					<a class="logo-text">Voyages Équilibre Terrestre</a>
+				</h1>
+				<nav>
+					<ul class="nav-menu flex-end">
+						<li><a class="actuel" href="#hero">Accueil</a></li>
+						<li><a href="#call-to-action">Rejoignez-nous</a></li>
+						<li><a href="#pie-chart-section">Statistiques</a></li>
+						<li><a class="btn-commande" href="#footer">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-<body>
-    <header>
-        <div class="container flex-between align-center">
-            <h1 class="logo"><img src="img/png/logo.png" alt="Logo"> 
-                <a class="logo-text">Voyages Équilibre Terrestre</a></h1>
-            <nav>
-                <ul class="nav-menu flex-end">
-                    <li><a class="actuel" href="#hero">Accueil</a></li>
-                    <li><a href="#call-to-action">Rejoignez-nous</a></li>
-                    <li><a href="#pie-chart-section">Statistiques</a></li>
-                    <li><a class="btn-commande" href="#footer">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+		<main class="container">
+			<!-- Section Hero -->
+			<section id="hero">
+				<div class="hero-container">
+					<img src="img/hero-image.jpg" alt="Image Hero" class="hero-image" />
+					<div class="hero-navigation">
+						<button class="hero-nav-arrow left-arrow">&#9664;</button>
+						<button class="hero-nav-arrow right-arrow">&#9654;</button>
+					</div>
+					<div class="hero-dots">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+				<h2 class="hero-title">Équilibre et Sérénité à Travers le Voyage</h2>
+			</section>
 
-    <main class="container">
-        <!-- Section Hero -->
-        <section id="hero">
-            <div class="hero-container">
-                <img src="img/hero-image.jpg" alt="Image Hero" class="hero-image">
-                <div class="hero-navigation">
-                    <button class="hero-nav-arrow left-arrow">&#9664;</button>
-                    <button class="hero-nav-arrow right-arrow">&#9654;</button>
-                </div>
-                <div class="hero-dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-            <h2 class="hero-title">Équilibre et Sérénité à Travers le Voyage</h2>
-        </section>
+			<!-- Section Call to Action -->
+			<section id="call-to-action">
+				<h2>Rejoignez notre communauté</h2>
+				<h3>Inscrivez-vous à notre liste de diffusion pour rester informé</h3>
+				<form>
+					<input type="email" placeholder="Entrez votre courriel" required />
+					<button type="submit">S'inscrire</button>
+				</form>
+			</section>
 
-        <!-- Section Call to Action -->
-        <section id="call-to-action">
-            <h2>Rejoignez notre communauté</h2>
-            <h3>Inscrivez-vous à notre liste de diffusion pour rester informé</h3>
-            <form>
-                <input type="email" placeholder="Entrez votre courriel" required>
-                <button type="submit">S'inscrire</button>
-            </form>
-        </section>
+			<!-- Section Pie Chart -->
+			<section id="pie-chart-section" class="flex-between">
+				<div class="chart-container">
+					<div class="pie-chart-placeholder">
+						<img
+							src="img/Chile_Terrain_Pie_Chart.jpg"
+							alt="pie chart terrain of Chile"
+						/>
+					</div>
+				</div>
+				<div class="chart-info">
+					<h2>Statistiques Clés</h2>
+					<p>Découvrez des faits intéressants sur le Chili.</p>
+					<div class="flex-between">
+						<div class="flex-col">
+							<div class="large-text">
+								<p>19,6 millions</p>
+							</div>
+							<p>Population du Chili</p>
+						</div>
+						<div class="flex-col">
+							<div class="large-text">
+								<p>6435 km</p>
+							</div>
+							<p>Kilomètres de littoral</p>
+						</div>
+					</div>
+					<button type="button">Voir plus</button>
+				</div>
+			</section>
+		</main>
 
-        <!-- Section Pie Chart -->
-        <section id="pie-chart-section" class="flex-between">
-            <div class="chart-container">
-                <div class="pie-chart-placeholder">
-                    <img src="img/Chile_Terrain_Pie_Chart.jpg" alt="pie chart terrain of Chile">
-                </div>
-            </div>
-            <div class="chart-info">
-                <h2>Statistiques Clés</h2>
-                <p>Découvrez des faits intéressants sur le Chili.</p>
-                <div class="flex-between large-text">
-                    <div>
-                        <p>19,6 millions</p>
-                        <p>Population du Chili</p>
-                    </div>
-                    <div>
-                        <p>6 435 km</p>
-                        <p>Kilomètres de littoral</p>
-                    </div>
-                </div>
-                <button type="button">Voir plus</button>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="footer-logo">
-            <h1 class="logo"><img src="img/png/logo.png" alt="Logo"></h1>
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Fonctionnalités</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Carrière</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-            </ul>
-        </div>
-        <p>Site réalisé par: <strong>Jackson Tran</strong> | Dans le cadre du cours Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières</p>
-    </footer>
-</body>
-
+		<footer id="footer">
+			<div class="footer-logo">
+				<h1 class="logo"><img src="img/png/logo.png" alt="Logo" /></h1>
+			</div>
+			<div class="footer-links">
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Rejoignez-vous</a></li>
+					<li><a href="#">Statistiques</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+			<p>
+				Site réalisé par: <strong>Jackson Tran</strong> | Dans le cadre du cours
+				Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières
+			</p>
+		</footer>
+	</body>
 </html>

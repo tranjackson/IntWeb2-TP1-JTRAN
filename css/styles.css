@@ -18,11 +18,19 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 20px;
 }
 
 .flex-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -51,6 +59,10 @@ body {
     .flex-col-break-960px {
         flex-direction: column;
     }
+}
+
+header {
+    border-bottom: 2px groove rgb(219, 213, 213);
 }
 
 nav ul {
@@ -120,6 +132,8 @@ nav a:hover, .btn:hover {
     height: auto;
     max-height: 500px;
     object-fit: cover;
+    border: 1px solid;
+    box-shadow: 2px 6px 10px #211F2A;
 }
 
 .hero-navigation {
@@ -133,17 +147,12 @@ nav a:hover, .btn:hover {
 }
 
 .hero-nav-arrow {
-    background: rgba(0, 0, 0, 0.5);
     border: none;
-    color: white;
+    color: #893b3b;
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-    border-radius: 50%;
-}
-
-.hero-nav-arrow:hover {
-    background: rgba(0, 0, 0, 0.8);
+    
 }
 
 .hero-dots {
@@ -162,7 +171,7 @@ nav a:hover, .btn:hover {
     height: 12px;
     width: 12px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color: #893b3b;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -266,9 +275,10 @@ nav a:hover, .btn:hover {
 
 .large-text {
     display: flex;
-    justify-content: space-between;
+   align-items: center;
     font-size: 1.8em;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 .large-text div {
@@ -291,7 +301,7 @@ nav a:hover, .btn:hover {
 
 footer {
     padding: 20px;
-    background-color: rgba(92, 41, 13, 0.873);
+    background-color: #893b3b;
     color: white;
     text-align: center;
 }
