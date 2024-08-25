@@ -1,0 +1,40 @@
+@import 'mixins';
+
+.flex-between {
+  @include flex-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.flex-col-break-960px {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+}

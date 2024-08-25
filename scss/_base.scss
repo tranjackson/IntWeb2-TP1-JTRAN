@@ -1,0 +1,23 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-family;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $secondary-color;
+	background-color: $light-background;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-top: 20px;
+}
+

@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'mixins';
+
+header {
+  border-bottom: 2px groove rgb(219, 213, 213);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  color: $secondary-color;
+  transition: transform 0.3s ease;
+
+  &:hover, .btn:hover {
+    color: #f2f2f2;
+    background-color: $hover-color;
+    border-color: $hover-color;
+    transform: scale(1.1);
+  }
+}
+
+.logo {
+  @include flex-center;
+  text-decoration: none;
+  font-weight: 700;
+  color: $primary-color;
+  font-size: 2rem;
+  margin: 0;
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.logo-text {
+  padding: 10px;
+}

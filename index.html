@@ -10,14 +10,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<link rel="stylesheet" href="css/normalize.css" >
 		<link rel="stylesheet" href="css/styles.css" >
-		<link rel="icon" type="img/png" href="img/png/favicon.png" >
+		<link rel="icon" type="image/png" href="img/png/favicon.png" >
 	</head>
 
 	<body>
-		<header>
-			<div class="container flex-between align-center">
+		<header class="header">
+			<div class="header__container">
+			  <h1 class="header__logo">
+				<img src="img/png/logo.png" alt="Logo" class="header__logo__img">
+				<a class="header__logo__text">Voyages Équilibre Terrestre</a>
+			  </h1>
+			  <nav class="header__nav">
+				<ul class="header__nav__list">
+				  <li class="header__nav__item"><a class="header__nav__link header__nav__link--active" href="#hero">Accueil</a></li>
+				  <li class="header__nav__item"><a class="header__nav__link" href="#call-to-action">Rejoignez-nous</a></li>
+				  <li class="header__nav__item"><a class="header__nav__link" href="#pie-chart-section">Statistiques</a></li>
+				  <li class="header__nav__item"><a class="header__nav__link" href="#contact">Contact</a></li>
+				</ul>
+			  </nav>
+			</div>
+		  </header>
+
+		<!-- <header>
+			<div class="container flex-between">
 				<h1 class="logo">
-					<img src="img/png/logo.png" alt="Logo" >
+					<img src="img/png/logo.png" alt="Logo">
 					<a class="logo-text">Voyages Équilibre Terrestre</a>
 				</h1>
 				<nav>
@@ -25,120 +42,150 @@
 						<li><a class="actuel" href="#hero">Accueil</a></li>
 						<li><a href="#call-to-action">Rejoignez-nous</a></li>
 						<li><a href="#pie-chart-section">Statistiques</a></li>
-						<li><a href="#footer-contact">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-
+ -->
 		<main class="container">
 			<!-- Section Hero -->
 			<section id="hero">
-				<div class="hero-container">
-					<img src="img/hero-image.jpg" alt="Image Hero" class="hero-image" >
-					<div class="hero-navigation">
-						<button class="hero-nav-arrow left-arrow">&#9664;</button>
-						<button class="hero-nav-arrow right-arrow">&#9654;</button>
+				<div class="hero__container">
+					<img src="img/hero-image.jpg" alt="Image Hero" class="hero__image">
+					<div class="hero__navigation">
+						<button class="hero__nav-arrow left-arrow">&#9664;</button>
+						<button class="hero__nav-arrow right-arrow">&#9654;</button>
 					</div>
-					<div class="hero-dots">
-						<span class="dot"></span>
-						<span class="dot"></span>
-						<span class="dot"></span>
+					<div class="hero__dots">
+						<span class="hero__dot"></span>
+						<span class="hero__dot"></span>
+						<span class="hero__dot"></span>
 					</div>
 				</div>
-				<h2 class="hero-title">Équilibre et Sérénité à Travers le Voyage</h2>
+				<h2 class="hero__title">Équilibre et Sérénité à Travers le Voyage</h2>
 			</section>
 
 			<!-- Section Call to Action -->
-			<section id="call-to-action">
-				<h2>Rejoignez notre communauté</h2>
-				<h3>Inscrivez-vous à notre liste de diffusion pour rester informé</h3>
-				<p>
-					Êtes-vous à la recherche d’une expérience de voyage qui allie
-					l’exploration géologique à la croissance spirituelle? Contactez-nous
-					dès aujourd’hui et commencez votre voyage vers l’équilibre et
-					l’harmonie !
-				</p>
-				<form>
-					<input type="email" placeholder="Entrez votre courriel" required >
-					<button type="submit">S'inscrire</button>
-				</form>
+			<section id="call-to-action" class="call-to-action">
+				<div class="call-to-action__form">
+					<h2 class="call-to-action__title">Rejoignez notre communauté</h2>
+					<h3 class="call-to-action__subtitle">
+						Inscrivez-vous à notre liste de diffusion pour rester informé
+					</h3>
+					<p class="call-to-action__text">
+						Êtes-vous à la recherche d’une expérience de voyage qui allie
+						l’exploration géologique à la croissance spirituelle? Contactez-nous
+						dès aujourd’hui et commencez votre voyage vers l’équilibre et
+						l’harmonie !
+					</p>
+					<form>
+						<input
+							type="email"
+							class="call-to-action__form__email"
+							placeholder="Entrez votre courriel"
+							required
+						>
+						<button type="submit" class="call-to-action__button">
+							S'inscrire
+						</button>
+					</form>
+				</div>
 			</section>
 
-			<!-- Section Pie Chart -->
-			<section id="pie-chart-section" class="flex-between">
-				<div class="chart-container">
-					<div class="pie-chart-placeholder">
+			<section id="pie-chart-section" class="pie-chart-section">
+				<div class="pie-chart-section__container">
+					<div class="pie-chart-section__container__image">
 						<img
 							src="img/Chile_Terrain_Pie_Chart.jpg"
 							alt="pie chart terrain of Chile"
 						>
 					</div>
 				</div>
-				<div class="chart-info">
-					<h2>Statistiques Clés</h2>
-					<p>Des faits intéressants sur notre prochain voyage - le Chili !</p>
-					<div class="flex-between">
-						<div class="flex-col">
-							<div class="large-text">
-								<p>19,6 millions</p>
-							</div>
-							<p>Population du Chili</p>
-						</div>
-						<div class="flex-col">
-							<div class="large-text">
-								<p>6435 km</p>
-							</div>
-							<p>Kilomètres de littoral</p>
-						</div>
+				<div class="pie-chart-section__info">
+					<h2 class="pie-chart-section__info__title">Statistiques Clés</h2>
+					<p class="pie-chart-section__info__text">
+						Des faits intéressants sur notre prochain voyage - le Chili !
+					</p>
+					<div class="flex-between"> 
+					<div class="flex-col">
+					<div class="pie-chart-section__text-large">6893 metres</div>
+					<p class="pie-chart-section__info__text">Ojos del Salado - le plus haut sommet</p>
 					</div>
-					<button type="button">Voir plus</button>
+					<div class="flex-col">
+					<div class="pie-chart-section__text-large">6435 km</div>
+					<p class="pie-chart-section__info__text">Kilomètres de littoral</p>
+				</div>
+				</div>
+					<button type="button" class="call-to-action__button">
+						Voir plus
+					</button>
 				</div>
 			</section>
 		</main>
+		<footer id="footer" class="footer">
+			<div class="footer__logo">
+			  <h1 class="logo"><img src="img/png/logo.png" alt="Logo" class="header__logo__img"></h1>
+			</div>
+			<div class="footer__links">
+			  <ul class="footer__links__list">
+				<li class="footer__links__list__item"><a class="footer__links__list__item__link" href="#">Accueil</a></li>
+				<li class="footer__links__list__item"><a class="footer__links__list__item__link" href="#">Rejoignez-nous</a></li>
+				<li class="footer__links__list__item"><a class="footer__links__list__item__link" href="#">Statistiques</a></li>
+				<li class="footer__links__list__item"><a class="footer__links__list__item__link" href="#">Contact</a></li>
+				<li class="footer__links__list__item"><a class="footer__links__list__item__link" href="#">Politique de confidentialité</a></li>
+			  </ul>
+			</div>
+			<div id="contact" class="footer__contact">
+			  <div class="footer__contact__address">
+				<p>Fait par: <strong>Jackson Tran</strong></p>
+			  </div>
+			  <div class="footer__contact__social-links">
+				<a href="#"><img src="icons/facebook.png" alt="Facebook" ></a>
+				<a href="#"><img src="icons/linkedin.png" alt="LinkedIn" ></a>
+				<a href="#"><img src="icons/twitter.png" alt="Twitter" ></a>
+				<a href="#"><img src="icons/instagram.png" alt="Instagram" ></a>
+			  </div>
+			  <div class="footer__contact__communication">
+				<a href="#"><img src="icons/telephone.png" alt="Telephone" ></a>
+				<p>+514 536-5594</p>
+				<a href="#"><img src="icons/mail.png" alt="Mail" ></a>
+				<p>cegep@troisriviere.ca</p>
+			  </div>
+			</div>
+		  </footer>
+		  
 
-		<footer id="footer">
-			<div class="footer-logo">
+<!-- 		<footer id="footer">
+			<div class="footer-logo flex-center">
 				<h1 class="logo"><img src="img/png/logo.png" alt="Logo" ></h1>
 			</div>
-			<div class="footer-links">
+			<div class="footer-links flex-center">
 				<ul>
 					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Rejoignez-vous</a></li>
+					<li><a href="#">Rejoignez-nous</a></li>
 					<li><a href="#">Statistiques</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="#">Politique de confidentialité</a></li>
 				</ul>
 			</div>
-			<div id="footer-contact" class="flex-center footer-address">
-				<div class="flex-row">
+			<div id="contact" class="footer-contact">
+				<div class="footer-address">
 					<p>Fait par: <strong>Jackson Tran</strong></p>
 				</div>
 				<div class="footer-social">
-					<a href="#">
-						<img src="icons/facebook.png" alt="Facebook" >
-					</a>
-					<a href="#">
-						<img src="icons/linkedin.png" alt="LinkedIn" >
-					</a>
-					<a href="#">
-						<img src="icons/twitter.png" alt="Twitter" >
-					</a>
-					<a href="#">
-						<img src="icons/instagram.png" alt="Instagram" >
-					</a>
+					<a href="#"><img src="icons/facebook.png" alt="Facebook" ></a>
+					<a href="#"><img src="icons/linkedin.png" alt="LinkedIn" ></a>
+					<a href="#"><img src="icons/twitter.png" alt="Twitter" ></a>
+					<a href="#"><img src="icons/instagram.png" alt="Instagram" ></a>
 				</div>
-				<div class="flex-end">
-					<a href="#">
-						<img src="icons/telephone.png" alt="Telephone" >
-					</a>
+				<div class="flex-row">
+					<a href="#"><img src="icons/telephone.png" alt="Telephone" ></a>
 					<p>+514 536-5594</p>
-					<a href="#">
-						<img src="icons/mail.png" alt="Mail" >
-					</a>
+					<a href="#"><img src="icons/mail.png" alt="Mail" ></a>
 					<p>cegep@troisriviere.ca</p>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 	</body>
 </html>

@@ -1,0 +1,40 @@
+.pie-chart-section {
+	padding-bottom: 60px;
+}
+
+.large-text {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.chart-container {
+	flex: 1;
+	min-width: 300px;
+	max-width: 100%;
+	margin-right: 20px;
+	overflow: hidden;
+}
+
+.pie-chart-placeholder img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.chart-info {
+	flex: 1;
+	min-width: 300px;
+	gap: 100px;
+
+	& h2 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+
+	& p {
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		color: #555;
+	}
+}
