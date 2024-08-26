@@ -1,6 +1,6 @@
 @import "mixins";
 @import "variables";
-@import "header";
+@import "layout";
 
 .footer {
 	padding-top: 20px;
@@ -9,12 +9,8 @@
 	text-align: center;
 
     &__logo {
-        @include flex-center;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 2rem;
+        @extend %logo;
         margin: 0 auto;
-		gap: 20px;
     }
     
     &__img {
@@ -52,6 +48,7 @@
 
 					&:hover {
 						color: $accent-color;
+						border-color: $accent-color;
 					}
 				}
 			}

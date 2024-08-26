@@ -1,55 +1,55 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
+@import "layout";
 
 .call-to-action {
-  @include flex-center;
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  background-color: $light-background;
+	@include flex-center;
+	text-align: center;
+	margin: 20px 0;
+	padding: 10px;
+	background-color: $light-background;
 
-  &__title { 
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
+	&__title {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
 
-  &__subtitle {
-    font-size: 1.5em;
-  }
- 
-  &__text { 
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 20px;
-  }
+	&__subtitle {
+		font-size: 1.5em;
+	}
 
-  &__form { 
-    display: inline-block;
-    width: 100%;
-    padding-top: 10px;
+	&__text {
+		font-size: 1.1em;
+		color: #555;
+		margin-bottom: 20px;
+	}
 
-    &__email { 
-      width: 70%;
-      padding: 10px;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
+	&__form {
+		display: inline-block;
+		width: 100%;
+		padding-top: 10px;
 
-    &__button { 
-      @extend %button;
-      background-color: $accent-color;
+		&__email {
+			width: 70%;
+			padding: 10px;
+			font-size: 1em;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-right: 10px;
+		}
+	}
 
+	&__button {
+		@extend %button;
 
-      &:hover {
-        background-color: darken($accent-color, 30%);
-      }
-    }
-  }
-}
-
-.call-to-action__button { 
+		/*       &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    background-color: darken($accent-color, 30%);
+  } 
+} */
+	}
+	/* .call-to-action__button { 
   padding: 10px 20px;
   font-size: 1em;
   border: none;
@@ -62,4 +62,5 @@
   &:hover {
     background-color: #e65500;
   }
+} */
 }

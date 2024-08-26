@@ -47,17 +47,19 @@
 
   &__dots {
     @include flex-center;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   &__dot {
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
     margin: 0 5px;
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    color: $primary-color;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 
     &--active {
       background-color: #717171;
