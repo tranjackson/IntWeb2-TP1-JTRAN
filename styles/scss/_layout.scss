@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'variables';
 
 %flex-between {
   @include flex-between;
@@ -28,6 +29,13 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+%button {
+  text-decoration: none;
+  display: inline-block;
+  padding: $btn-pad-std;
+  border-radius: $btn-border-radius;
 }
 
 .flex-col-break-960px {
