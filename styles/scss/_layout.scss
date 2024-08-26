@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.flex-between {
+%flex-between {
   @include flex-between;
 }
 
@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-.flex-row {
+%flex-row {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
