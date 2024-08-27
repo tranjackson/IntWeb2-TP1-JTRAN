@@ -21,3 +21,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+@mixin flex-col {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
