@@ -19,6 +19,10 @@
     margin: 0 auto;
     @include flex-center;
 
+    @media (max-width: 768px) { 
+      width: 100%; 
+    }
+    
     @media (min-width: 768px) { 
       width: 60%; 
     }
@@ -35,6 +39,11 @@
     width: 100%;
     transform: translateY(-50%);
     padding: 0 20px;
+
+    @media (max-width: 768px) { 
+      display: none !important;
+    }
+    
   }
 
   &__nav-arrow {
@@ -70,5 +79,13 @@
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
+
+    @media (max-width: 768px) { 
+      font-size: $font-size-medium;
+    }
   }
+}
+
+.ally-button {
+  border: none;
 }

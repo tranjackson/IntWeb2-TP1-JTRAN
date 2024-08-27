@@ -5,11 +5,11 @@
 .footer {
 	padding-top: 20px;
 	background-color: $primary-color;
-	color: white;
+	color: $light-background;
 	text-align: center;
 
     &__logo {
-        @extend %logo;
+        @include logo($light-background);
         margin: 0 auto;
     }
     
@@ -83,5 +83,20 @@
 				margin: 0 10px;
 			}
 		}
+
+		    // Media query for stacking at max-width 768px
+			@media (max-width: 768px) {
+				@include flex-col; 
+				align-items: center;
+
+				&__address {
+					padding-right: 0;
+				}
+		
+				&__address, &__social-links, &__communication {
+					margin-right: 0;
+					max-width: 100%;
+				}
+			}
 	}
 }

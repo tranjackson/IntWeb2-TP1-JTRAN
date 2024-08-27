@@ -46,19 +46,9 @@
   
   &:hover {
     background-color: $hover-color;
-    border-color: $hover-color;
+    border-color: darken($accent-color, 30%);
     transform: scale(1.1);
-    // background-color: darken($accent-color, 30%);
   }
-}
-
-%logo {
-	@include flex-center;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 2rem;
-	margin: 0;
-	gap: 20px;
 }
 
 .flex-col-break-960px {
