@@ -35,8 +35,8 @@
         }
 
         &__text {
-            font-size: 1.2em;
-            color: #555;
+            font-size: 1.1em;
+            color: $secondary-color;
         }
     }
 
@@ -61,13 +61,20 @@
         padding-top: 40px;
     }
 
-    // Media query for stacking at max-width 768px
     @media (max-width: 768px) {
         @include flex-col; 
 
         &__container, &__info {
             margin-right: 0;
             max-width: 100%;
+        }
+
+        &__info__title {
+            font-size: $font-size-medium;
+        }
+
+        &__text-large {
+            font-size: $font-size-base;
         }
     }
 }

@@ -32,9 +32,8 @@
 			transition: transform 0.3s ease;
 
 			&:hover {
-				color: #f2f2f2;
+				color: $light-background;
 				background-color: $hover-color;
-				border-color: $hover-color;
 				transform: scale(1.1);
 			}
 		}
@@ -55,7 +54,12 @@
 			@include logo-text($primary-color, none);
 		}
 
-		
+		@media (max-width: 768px) {
+			&__text {
+				font-size: $font-size-small;
+			}
+		}
+	
 	}
 }
 
@@ -64,11 +68,7 @@
 	display: none !important;
 }
 
-@media (max-width: 768px) {
-	.header__logo__text {
-		font-size: $font-size-small;
-	}
-}
+
 
 @media screen and (max-width: 960px) {
 	.hide-on-small-screen{

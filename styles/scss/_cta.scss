@@ -4,7 +4,6 @@
 
 .call-to-action {
 	@include flex-center;
-  display: flow;
 	text-align: center;
 	margin: 20px 0;
 	padding: 10px;
@@ -20,16 +19,14 @@
 	}
 
 	&__text {
-		font-size: 1.1em;
-		color: #555;
+		font-size: $font-size-small;
+		color: $secondary-color;
 		margin-bottom: 10px;
 	}
 
   &__promo {
-		display: inherit;
 		width: 100%;
 		padding-top: 10px;
-    clear: both;
   }
 
 }
