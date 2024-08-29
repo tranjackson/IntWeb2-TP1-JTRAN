@@ -10,7 +10,7 @@
 	}
 
 	&__image {
-		width: 90%;
+		width: 80%;
 		height: auto;
 		max-height: 500px;
 		object-fit: cover;
@@ -19,11 +19,7 @@
 		margin: 0 auto;
 		@include flex-center;
 
-    &--width-large {
-			width: 90%;
-		}
-
-		&--width-medium {
+		&--width-large {
 			width: 80%;
 		}
 
@@ -32,15 +28,26 @@
 		}
 
 		@media (max-width: 768px) {
-			width: 100%;
+			.hero__image {
+				width: 100%;
+			}
+
+			&--width-large {
+				width: 100%;
+			}
+
+			&--width-small {
+				width: 100%;
+			}
 		}
 
 		@media (min-width: 768px) and (max-width: 1023px) {
-			width: 70%;
-		}
-
-		@media (min-width: 1024px) {
-			width: 80%;
+			&--width-large {
+				width: 80%;
+			}
+			&--width-small {
+				width: 70%;
+			}
 		}
 	}
 
@@ -93,17 +100,17 @@
 
 		&--small {
 			font-size: $font-size-small;
+
+			@media (max-width: 768px) {
+				font-size: $font-size-small;
+			}
 		}
 
 		&--medium {
 			font-size: $font-size-medium;
-		}
 
-		@media (max-width: 768px) {
-			&--small,
-			&--medium,
-			&--large {
-				font-size: $font-size-small;
+			@media (min-width: 768px) and (max-width: 1023px) {
+				font-size: $font-size-medium;
 			}
 		}
 	}
